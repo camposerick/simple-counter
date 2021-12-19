@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contador</title>
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Counter</h1>
+      <h2>Range</h2>
+      <div class="min">
+        <label for="minRange">Min</label>
+        <input
+          type="number"
+          class="range"
+          id="minRange"
+          name="minRange"
+          autofocus
+        />
+      </div>
+      <div class="max">
+        <label for="maxRange">Max</label>
+        <input type="number" class="range" id="maxRange" name="maxRange" />
+      </div>
+      <button id="start" onclick="main()">Start</button>
+
+      <div id="counter">
+        <button class="counterButton" id="minusButton" name="subtrair">
+          -
+        </button>
+        <span id="currentNumber"></span>
+        <button class="counterButton" id="plusButton" name="adicionar">
+          +
+        </button>
+      </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
